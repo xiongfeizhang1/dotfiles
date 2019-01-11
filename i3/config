@@ -139,14 +139,14 @@ bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
 
 #monitor settings FIX REFRESH RATE 
-exec --no-startup-id xrandr --output DVI-D-1 --off --output HDMI-1 --off --output DP-2 --primary --mode 1920x1080 -r 144 --pos 1920x0 --rotate normal --output DP-1 --off --output HDMI-2 --mode 1920x1080 -r 72 --pos 0x0 --rotate normal
+#exec --no-startup-id xrandr --output DVI-D-1 --off --output HDMI-1 --off --output DP-2 --primary --mode 1920x1080 -r 144 --pos 1920x0 --rotate normal --output DP-1 --off --output HDMI-2 --mode 1920x1080 -r 72 --pos 0x0 --rotate normal
 
 # workspaces 
-set $firstMonitor DP-2
-set $secondMonitor HDMI-2
+#set $firstMonitor DP-2
+#set $secondMonitor HDMI-2
 
-workspace $ws2 output $firstMonitor
-workspace $ws1 output $secondMonitor
+#workspace $ws2 output $firstMonitor
+#workspace $ws1 output $secondMonitor
 
 #workspace 1 output $firstMonitor
 #workspace 2 output $secondMonitor
@@ -320,7 +320,7 @@ bindsym XF86AudioStop exec playerctl stop
 
 
 #switch to headphones automatically
-exec_always $HOME/scripts/defaultoutput.sh
+#exec_always $HOME/scripts/defaultoutput.sh
 
 
 
@@ -331,7 +331,6 @@ exec_always $HOME/scripts/defaultoutput.sh
 #bindsym $mod+b bar mode toggle
 
 
-#exec_always --nostartup-id /home/xz/scripts/polybarstart.sh
 exec_always --no-startup-id $HOME/scripts/polybarstart.sh
 
 ################### BORDER ######################
