@@ -418,7 +418,6 @@ mode "$mode_gaps_outer" {
 
 
 #####################COMPTON#########################
-#remember to fix exclude shadows
 exec_always compton --config ~/.config/i3/compton.conf
 
 #######################TERMINAL######################
