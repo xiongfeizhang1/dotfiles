@@ -92,6 +92,7 @@ bindsym $mod+e layout toggle split
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
 
+
 # change focus between tiling / floating windows
 bindsym $mod+space focus mode_toggle
 
@@ -433,3 +434,9 @@ exec --no-startup-id nm-applet
 
 #wallpaper
 exec_always feh --bg-scale --no-xinerama /home/xz/Pictures/wallpaper.jpg
+
+#touchpad
+exec_always touchpad-indicator
+
+#this will crash i3 
+###########exec_always --no-startup-id xfsettingsd --sm-client-disable &
