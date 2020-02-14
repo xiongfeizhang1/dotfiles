@@ -230,15 +230,26 @@ bindsym $mod+r mode "resize"
 
 # Theme colors
 # class                 border  backgr. text    indic.  child_border
-client.focused          #2e0342 #2e0342 #0c0c0c
-client.focused_inactive #2e0342 #0c0c0c #16A085 #454948
-client.unfocused        #434745 #000000 #16A085 #454948
-client.urgent           #CB4B16 #FDF6E3 #16A085 #0c0c0c
-client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c
+#client.focused          #2e0342 #2e0342 #0c0c0c
+#client.focused_inactive #2e0342 #0c0c0c #16A085 #454948
+#client.unfocused        #434745 #000000 #16A085 #454948
+#client.urgent           #CB4B16 #FDF6E3 #16A085 #0c0c0c
+#client.placeholder      #000000 #0c0c0c #ffffff #000000 #0c0c0c
 
-client.background       #2B2C2B
+#client.background       #2B2C2B
 
 
+#pywal i3 values
+set_from_resource $fg i3wm.color7 #f0f0f0
+set_from_resource $bg i3wm.color2 #f0f0f0
+
+client.focused          $bg     $bg     $fg  $bg       $bg
+client.focused_inactive $bg     $bg     $fg  $bg       $bg
+client.unfocused        $bg     $bg     $fg  $bg       $bg
+client.urgent           $bg     $bg     $fg  $bg       $bg
+client.placeholder      $bg     $bg     $fg  $bg       $bg
+
+client.background       $bg
 
 #conky
 #exec --no-startup-id conky -c $HOME/.config/conky/conky.confi
